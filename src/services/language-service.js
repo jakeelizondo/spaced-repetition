@@ -10,6 +10,7 @@ const LanguageService = {
           Authorization: `Bearer ${TokenService.getAuthToken()}`,
         },
       });
+
       if (!response.ok) {
         return response.json().then((event) => Promise.reject(event));
       } else {
