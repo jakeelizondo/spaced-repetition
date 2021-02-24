@@ -7,9 +7,10 @@ export default function DashBar(props) {
     <div className="dash-bar">
       <h2>{props.language}</h2>
       <p>Total correct answers: {props.total_score}</p>
-      <button className="red-back">
-        <Link to={'/learn'}>Start practicing</Link>
-      </button>
+
+      <Link to={'/learn'} className="practice-link red-back">
+        Start practicing
+      </Link>
     </div>
   );
 }

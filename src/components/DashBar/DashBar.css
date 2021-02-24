@@ -8,15 +8,16 @@
   }
 
   .dash-bar h2,
-  p,
-  button {
+  p {
     margin: 10px 0px 0px 0px;
   }
 
-  .dash-bar button {
+  .practice-link {
     min-width: 150px;
     margin: 10px 0px;
     padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
@@ -36,20 +37,30 @@
   }
 
   .dash-bar h2,
-  p,
-  button {
+  p {
     margin: 10px 0px 0px 0px;
   }
 
-  .dash-bar button {
+  .dash-bar p {
+    font-size: 20px;
+  }
+
+  .practice-link {
     min-width: 150px;
-    margin: 10px 0px;
+    margin: 20px 0px 10px 0px;
     padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     font-size: 15px;
     font-weight: 600;
+  }
+
+  .practice-link:hover {
+    background-color: #fdf3c5;
+    transition-duration: 400ms;
   }
 }
