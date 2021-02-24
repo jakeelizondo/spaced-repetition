@@ -31,6 +31,11 @@
   .header-login-nav span {
     font-weight: 600;
   }
+
+  .header-nav a,
+  span {
+    padding: 0px 20px;
+  }
 }
 
 @media all and (min-width: 767px) {
@@ -65,5 +70,9 @@
 
   .header-login-nav span {
     font-size: 20px;
+  }
+  .header-nav a,
+  span {
+    padding: 0px 20px;
   }
 }
