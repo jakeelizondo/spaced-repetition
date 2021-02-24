@@ -15,6 +15,7 @@ export class WordProvider extends React.Component {
       });
     });
   }
+
   handleGuess = (guess) => {
     this.setState({ guess, prevWord: this.state.nextWord.nextWord });
     LanguageService.guessWord(guess).then((feedback) => {

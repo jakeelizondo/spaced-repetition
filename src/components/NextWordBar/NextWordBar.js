@@ -5,10 +5,6 @@ import './NextWordBar.css';
 export default class NextWordBar extends React.Component {
   static contextType = WordContext;
 
-  componentWillMount() {
-    this.context.getNextWord();
-  }
-
   render() {
     return (
       <div className="next-word-bar">
