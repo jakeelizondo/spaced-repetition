@@ -1,40 +1,30 @@
 @media all and (max-width: 767px) {
-  [role='alert'] {
-    color: red;
-  }
-
-  .login-form {
+  .learn-guess-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
     background-color: rgb(252, 252, 252);
     border-radius: 5px;
-    margin-top: 15px;
-    width: 90%;
+    padding: 15px 10px;
+    margin: 15px 10px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
   }
 
-  .login-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 90%;
-  }
-  .login-input label {
-    padding: 10px;
+  .learn-guess-form label {
+    padding: 15px 0px;
+    font-weight: 600;
   }
 
-  .login-input input {
-    width: 100%;
+  .learn-guess-form input {
+    margin: 15px 0px;
+    width: 80%;
+    text-align: center;
   }
-
-  .login-form button {
-    min-width: 100px;
-    margin: 10px 0px;
+  .learn-guess-form button {
     padding: 10px 0px;
+    width: 50%;
     border: none;
     border-radius: 5px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
@@ -43,53 +33,45 @@
     font-weight: 600;
   }
 }
-
 @media all and (min-width: 767px) {
-  [role='alert'] {
-    color: red;
-  }
-
-  .login-form {
+  .learn-guess-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 15px;
     background-color: rgb(252, 252, 252);
     border-radius: 5px;
-    margin-top: 15px;
-    width: 50%;
+    padding: 15px 10px;
+    margin: 15px 10px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
   }
 
-  .login-input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-  }
-  .login-input label {
-    padding: 10px;
+  .learn-guess-form label {
+    padding: 15px 0px;
     font-size: 20px;
-    flex: 1;
-  }
-  .login-input input {
-    font-size: 20px;
-    flex: 2;
+    font-weight: 600;
   }
 
-  .login-form button {
-    min-width: 200px;
-    margin: 10px 0px 25px 0px;
+  .learn-guess-form input {
+    margin: 15px 0px;
     padding: 10px 0px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+  }
+  .learn-guess-form button {
+    padding: 10px 0px;
+    width: 50%;
     border: none;
     border-radius: 5px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
   }
-  .login-form button:hover {
+
+  .learn-guess-form button:hover {
     background-color: #fdf3c5;
     transition-duration: 400ms;
   }

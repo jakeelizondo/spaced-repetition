@@ -6,6 +6,10 @@ import { LanguageContext } from '../../contexts/LanguageContext';
 class DashboardRoute extends Component {
   static contextType = LanguageContext;
 
+  componentWillMount() {
+    this.context.getAllWords();
+  }
+
   render() {
     return (
       <section>
@@ -13,7 +17,9 @@ class DashboardRoute extends Component {
           language={this.context.language.name}
           total_score={this.context.language.total_score}
         />
-        <DashWordWindow words={this.context.words} />
+        {this.context.words.length > 0 && (
+          <DashWordWindow words={this.context.words} />
+        )}
       </section>
     );
   }

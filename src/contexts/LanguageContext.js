@@ -17,10 +17,20 @@ export class LanguageProvider extends React.Component {
     });
   }
 
+  getAllWords = () => {
+    LanguageService.getAllWords().then((language) => {
+      this.setState({
+        language: language.language,
+        words: language.words,
+      });
+    });
+  };
+
   render() {
     const data = {
       language: this.state.language,
       words: this.state.words,
+      getAllWords: this.getAllWords,
     };
 
     return (

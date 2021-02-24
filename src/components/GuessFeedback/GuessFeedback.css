@@ -1,39 +1,29 @@
 @media all and (max-width: 767px) {
-  [role='alert'] {
-    color: red;
-  }
-
-  .login-form {
+  .feedback-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    justify-content: center;
+    text-align: center;
     background-color: rgb(252, 252, 252);
     border-radius: 5px;
-    margin-top: 15px;
-    width: 90%;
+    padding: 15px 10px;
+    margin: 15px 10px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
   }
 
-  .login-input {
+  .feedback {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    width: 90%;
-  }
-  .login-input label {
-    padding: 10px;
+    justify-content: center;
+    text-align: center;
   }
 
-  .login-input input {
-    width: 100%;
-  }
-
-  .login-form button {
-    min-width: 100px;
-    margin: 10px 0px;
+  .feedback-section button {
+    min-width: 150px;
+    margin: 30px 0px 10px 0px;
     padding: 10px 0px;
     border: none;
     border-radius: 5px;
@@ -45,51 +35,46 @@
 }
 
 @media all and (min-width: 767px) {
-  [role='alert'] {
-    color: red;
-  }
-
-  .login-form {
+  .feedback-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    justify-content: center;
+    text-align: center;
     background-color: rgb(252, 252, 252);
     border-radius: 5px;
-    margin-top: 15px;
-    width: 50%;
+    padding: 15px 10px;
+    margin: 15px 10px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
   }
 
-  .login-input {
+  .feedback {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
-  }
-  .login-input label {
-    padding: 10px;
-    font-size: 20px;
-    flex: 1;
-  }
-  .login-input input {
-    font-size: 20px;
-    flex: 2;
+    justify-content: center;
+    text-align: center;
   }
 
-  .login-form button {
-    min-width: 200px;
-    margin: 10px 0px 25px 0px;
+  .feedback p {
+    padding: 10px 0px;
+    font-size: 20px;
+  }
+
+  .feedback-section button {
+    min-width: 150px;
+    margin: 10px 0px;
     padding: 10px 0px;
     border: none;
     border-radius: 5px;
     -webkit-box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 2px 15px 1px rgba(0, 0, 0, 0.2);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
   }
-  .login-form button:hover {
+
+  .feedback-section button:hover {
     background-color: #fdf3c5;
     transition-duration: 400ms;
   }
