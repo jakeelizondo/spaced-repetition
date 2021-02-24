@@ -31,6 +31,14 @@ export class WordProvider extends React.Component {
     });
   };
 
+  getNextWord = () => {
+    LanguageService.getNextWord().then((word) => {
+      this.setState({
+        nextWord: word,
+      });
+    });
+  };
+
   resetGuessing = () => {
     this.setState({ guessing: !this.state.guessing });
   };
@@ -44,6 +52,7 @@ export class WordProvider extends React.Component {
       guess: this.state.guess,
       prevWord: this.state.prevWord,
       resetGuessing: this.resetGuessing,
+      getNextWord: this.getNextWord,
     };
 
     return (
