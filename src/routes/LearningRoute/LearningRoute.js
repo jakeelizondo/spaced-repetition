@@ -6,6 +6,10 @@ import WordGuessForm from '../../components/WordGuessForm/WordGuessForm';
 
 class LearningRoute extends Component {
   static contextType = WordContext;
+
+  componentWillUnmount() {
+    this.context.resetGuessing();
+  }
   render() {
     return (
       <section>
