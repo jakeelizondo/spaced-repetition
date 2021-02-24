@@ -8,7 +8,9 @@ class LearningRoute extends Component {
   static contextType = WordContext;
 
   componentWillUnmount() {
-    this.context.resetGuessing();
+    if (this.context.guessing === false) {
+      this.context.resetGuessing();
+    }
   }
   render() {
     return (
