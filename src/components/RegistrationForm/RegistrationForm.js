@@ -26,19 +26,16 @@ class RegistrationForm extends Component {
       password: password.value,
     })
       .then((user) => {
-        console.log('posting login');
         AuthApiService.postLogin({
           username: username.value,
           password: password.value,
+        }).then((res) => {
+          name.value = '';
+          username.value = '';
+          password.value = '';
+          this.context.processLogin(res.authToken);
+          this.props.onRegistrationSuccess();
         });
-      })
-      .then((res) => {
-        console.log(res);
-        name.value = '';
-        username.value = '';
-        password.value = '';
-        this.context.processLogin(res.authToken);
-        this.props.onRegistrationSuccess();
       })
       .catch((res) => {
         this.setState({ error: res.error });
